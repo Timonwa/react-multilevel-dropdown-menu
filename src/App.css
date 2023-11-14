@@ -62,7 +62,8 @@ button span {
   margin-left: 3px;
 }
 
-.menu-items > a, .menu-items button {
+.menu-items > a,
+.menu-items button {
   text-align: left;
   padding: 0.7rem 1rem;
 }
@@ -123,4 +124,18 @@ button span {
 .content a {
   color: #cc3852;
   margin-right: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#error-page {
+  /* center content on the page */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
 }
