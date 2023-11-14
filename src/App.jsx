@@ -1,5 +1,7 @@
+import React from "react";
+
 const App = () => {
-  return <h2>Home page content</h2>;
+  return <h1>App page content</h1>;
 };
 
 export default App;
