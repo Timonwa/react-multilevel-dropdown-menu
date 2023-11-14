@@ -29,6 +29,10 @@ const MenuItems = ({ items, depthLevel }) => {
     setDropdown(false);
   };
 
+  const toggleDropdown = (e) => {
+    setDropdown((prev) => !prev);
+  };
+
   const closeDropdown = () => {
     dropdown && setDropdown(false);
   };
@@ -46,7 +50,7 @@ const MenuItems = ({ items, depthLevel }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}>
+            onClick={() => toggleDropdown()}>
             <Link to={items.url}>{items.title}</Link>
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </button>
@@ -62,7 +66,7 @@ const MenuItems = ({ items, depthLevel }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}>
+            onClick={() => toggleDropdown()}>
             {items.title}{" "}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </button>
