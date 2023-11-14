@@ -1,3 +1,4 @@
+import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,12 @@ const Header = () => {
         <Link to="/" className="logo">
           Logo
         </Link>
+        
+        {/* for large screens */}
         <Navbar />
+
+        {/* for small screens */}
+        <MobileNav />
       </div>
     </header>
   );
