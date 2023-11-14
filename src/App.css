@@ -28,6 +28,7 @@ header {
   margin-right: 20px;
 }
 
+/* menu on desktop */
 .menus {
   display: flex;
   align-items: center;
@@ -107,23 +108,6 @@ button span {
   position: absolute;
   left: 100%;
   top: -7px;
-}
-
-/* content */
-
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 20px;
-}
-
-.content h2 {
-  margin-bottom: 1rem;
-}
-
-.content a {
-  color: #cc3852;
-  margin-right: 10px;
 }
 
 h1 {
