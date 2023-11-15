@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/" className="logo">
           Logo
         </Link>
-        
+
         {/* for large screens */}
         <Navbar />
 

@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const MenuItems = ({ items, depthLevel }) => {
@@ -65,9 +65,8 @@ const MenuItems = ({ items, depthLevel }) => {
           <button
             type="button"
             aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => toggleDropdown()}>
-            {items.title}{" "}
+            aria-expanded={dropdown ? "true" : "false"}>
+            {items.title}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </button>
           <Dropdown
