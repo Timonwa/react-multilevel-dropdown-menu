@@ -29,7 +29,7 @@ const MenuItems = ({ items, depthLevel }) => {
     setDropdown(false);
   };
 
-  const toggleDropdown = (e) => {
+  const toggleDropdown = () => {
     setDropdown((prev) => !prev);
   };
 
